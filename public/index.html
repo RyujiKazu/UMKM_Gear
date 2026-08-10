@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UMKM Gear - peminjaman alat produktif untuk pelaku UMKM.">
+  <title>UMKM Gear</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div id="auth-view" class="auth-layout">
+    <section class="auth-story" aria-label="Tentang UMKM Gear">
+      <div class="brand brand-light">
+        <span class="brand-mark" aria-hidden="true">UG</span>
+        <span>UMKM Gear</span>
+      </div>
+      <div class="story-content">
+        <p class="eyebrow">Peralatan bersama, usaha bertumbuh</p>
+        <h1>Akses alat usaha tanpa beban membeli di awal.</h1>
+        <p class="story-copy">Pinjam alat produksi, pengemasan, foto produk, dan bazar hingga lima hari. Fokuskan modal untuk mengembangkan produkmu.</p>
+        <div class="story-points" aria-label="Keunggulan layanan">
+          <div><strong>15+</strong><span>alat siap pakai</span></div>
+          <div><strong>5 hari</strong><span>durasi maksimal</span></div>
+          <div><strong>2 unit</strong><span>pinjaman aktif</span></div>
+        </div>
+      </div>
+      <p class="story-note">Dikelola transparan untuk koperasi dan komunitas UMKM.</p>
+    </section>
+
+    <main class="auth-panel">
+      <div class="login-card">
+        <div class="mobile-brand brand">
+          <span class="brand-mark" aria-hidden="true">UG</span>
+          <span>UMKM Gear</span>
+        </div>
+        <p class="eyebrow accent">Selamat datang</p>
+        <h2>Masuk ke ruang usahamu</h2>
+        <p class="muted">Gunakan akun anggota atau admin untuk melanjutkan.</p>
+        <form id="login-form" class="stack-form">
+          <label>
+            <span>Email</span>
+            <input id="login-email" name="email" type="email" autocomplete="email" placeholder="nama@usaha.id" required>
+          </label>
+          <label>
+            <span>Password</span>
+            <input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Minimal 8 karakter" minlength="8" required>
+          </label>
+          <p id="login-error" class="form-error" role="alert" hidden></p>
+          <button class="button button-primary button-block" type="submit">Masuk ke UMKM Gear</button>
+        </form>
+        <div class="demo-access">
+          <span>Akses cepat akun demo</span>
+          <div>
+            <button class="text-button" type="button" data-demo="member">Anggota</button>
+            <button class="text-button" type="button" data-demo="admin">Admin</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <div id="app-view" class="app-layout" hidden>
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">UG</span>
+        <span>UMKM Gear</span>
+      </div>
+      <nav id="main-nav" class="main-nav" aria-label="Navigasi utama"></nav>
+      <div class="sidebar-user">
+        <div id="user-avatar" class="avatar" aria-hidden="true">U</div>
+        <div>
+          <strong id="sidebar-user-name">Pengguna</strong>
+          <span id="sidebar-user-role">Anggota</span>
+        </div>
+        <button id="logout-button" class="icon-button" type="button" aria-label="Keluar">↗</button>
+      </div>
+    </aside>
+
+    <div class="content-shell">
+      <header class="topbar">
+        <div>
+          <p id="page-kicker" class="eyebrow accent">UMKM Gear</p>
+          <h1 id="page-title">Ringkasan</h1>
+        </div>
+        <div class="topbar-actions">
+          <span id="today-label" class="date-label"></span>
+          <div id="active-loan-chip" class="status-chip" hidden></div>
+        </div>
+      </header>
+      <main id="page-content" class="page-content" tabindex="-1"></main>
+    </div>
+
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Navigasi mobile"></nav>
+  </div>
+
+  <dialog id="entity-dialog" class="modal">
+    <div class="modal-header">
+      <div>
+        <p class="eyebrow accent">UMKM Gear</p>
+        <h2 id="dialog-title">Form</h2>
+      </div>
+      <button id="dialog-close" class="icon-button" type="button" aria-label="Tutup">×</button>
+    </div>
+    <div id="dialog-content"></div>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
