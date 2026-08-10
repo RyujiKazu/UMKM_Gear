@@ -3,7 +3,7 @@
 ## Informasi Tim
 - **Nama Kelompok:** MAHIR (Mahasiswa Akhir)
 - **Anggota Tim:**
-  1. Tito Muhammad Athoriq
+  1.Tito Muhammad Athoriq
   2. Muhammad Rivaldi Setiawan 
   3. Raihan Dafa Alfarizi
 
@@ -24,5 +24,3 @@
 - **Keamanan:** Autentikasi JWT (*HttpOnly cookie*), *password hashing* (bcrypt), dan validasi input (Zod).
 - **Integritas Data:** *Row locking* untuk mencegah *double-booking* alat yang sama, serta *soft delete* untuk riwayat.
 - **Automasi:** Status alat (tersedia/dipinjam) diperbarui secara otomatis.
-
-[![Thumbnail Video Demo](path/to/thumbnail-video.png)](https://link-ke-video-demo-anda.com)
