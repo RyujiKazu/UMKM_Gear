@@ -2,6 +2,7 @@
 
 ## Informasi Tim
 **Nama Kelompok:** MAHIR (Mahasiswa Akhir)
+
 **Anggota Tim:**
 1. Tito Muhammad Athoriq
 2. Muhammad Rivaldi Setiawan 
